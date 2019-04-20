@@ -13,7 +13,7 @@
      }
      
      async loadTasks() {
-       let response = await fetch(`http://localhost:3001/tasks`);
+       let response = await fetch(`http://localhost:3000/tasks`);
        const tasks = await response.json();
        this.setState({ tasks: tasks });
      }
